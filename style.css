@@ -8,7 +8,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: center;
     justify-content: center;
     background-color: white;
     animation: anim-start-screen 3s ease-in-out;
@@ -16,6 +16,8 @@ body {
 .screen-start {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 @keyframes anim-start-screen {
     0% {
@@ -30,6 +32,10 @@ body {
     100% {
         opacity: 0;
     }
+}
+.screen-start-title {
+    font-size: 45px;
+    color: white;
 }
 .main-home {
     width: 100vw;
