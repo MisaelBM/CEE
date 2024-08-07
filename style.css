@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: white;
-    animation: anim-start-screen 1.5s ease-in-out;
+    animation: anim-start-screen 3s ease-in-out;
 }
 .screen-start {
     display: flex;
@@ -21,7 +21,7 @@ body {
     0% {
         opacity: 0;
     }
-    10% {
+    20% {
         opacity: 1;
     }
     90% {
