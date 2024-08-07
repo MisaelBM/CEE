@@ -11,4 +11,4 @@ setTimeout (
         document.getElementById("mainHome").style.display = "flex";
         document.getElementById("screenStart").style.display = "none";
     }
-,1500);
+,3000);
