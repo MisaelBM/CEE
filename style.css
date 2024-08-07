@@ -4,10 +4,39 @@ body {
     font-family: sans-serif;
     background-color: white;
 }
+.screen-start-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    justify-content: center;
+    background-color: white;
+    animation: anim-start-screen 1.5s ease-in-out;
+}
+.screen-start {
+    display: flex;
+    flex-direction: column;
+}
+@keyframes anim-start-screen {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .main-home {
     width: 100vw;
     height: 100vh;
     overflow: auto;
+    display: none;
 }
 .header-principal {
     display: flex;
@@ -18,9 +47,7 @@ body {
     width: 100vw;
     background-color: black;
     border: 0px;
-    font-size: 25px;
     border-bottom: 2px solid rgb(0, 128, 255);
-    color: white;
 }
 .menu-content {
     width: 50px;
@@ -67,4 +94,58 @@ body {
 .menu-bar-anim-3 {
     transform: rotateZ(45deg) translate(0px, -11px);
     transition: 0.7s;
+}
+.menu-display-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 70px;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    border: 0px;
+    border-bottom: 4px solid gray;
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: 3px 3px 7px black;
+    padding: 30px 20px;
+    transform: translate(-300px, 0px);
+    transition: 0.7s;
+}
+.menu-display-anim {
+    transform: translate(0px, 0px);
+    transition: 0.7s;
+}
+.menu-display {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.item-menu-display {
+    transform: scale(1);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+.item-menu-display:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 115, 255);
+    transition: 0.7s;
+}
+.title-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    color: white;
+    font-size: 45px;
 }
